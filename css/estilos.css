@@ -1,0 +1,201 @@
+body{
+    margin:0;
+    padding:0;
+    background-image:url(../img/fundo1.png);
+    background-size:cover;
+}
+
+#container{
+    width:950px;
+    margin:auto;
+}
+
+#fundoGame{
+    width:950px;
+    height:630px;
+    background-image:url(../img/fundo2.png);
+    background-size:cover;
+    background-position:center;
+    border:2px solid #fff;
+    position:relative;
+    overflow:hidden;
+}
+
+#inicio{
+    width:500px;
+    height:350px;
+    background:rgba(255,255,255,0.92);
+    border-radius:20px;
+    position:absolute;
+    left:225px;
+    top:120px;
+    text-align:center;
+}
+
+#inicio p{
+    font-size:18px;
+    font-family:Arial;
+}
+
+#logo{
+    width:450px;
+    margin-top:15px;
+}
+
+#botao{
+    width:320px;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+#placar{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:rgba(255,255,255,0.9);
+    padding:10px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    z-index:999;
+}
+
+#tempo{
+    position:absolute;
+    top:10px;
+    right:240px;
+    background:rgba(255,255,255,0.9);
+    padding:10px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    z-index:999;
+}
+
+#barraTempo{
+    width:200px;
+    height:20px;
+    position:absolute;
+    top:15px;
+    right:20px;
+    border:2px solid #000;
+    background:#fff;
+    z-index:999;
+}
+
+#progressoTempo{
+    width:200px;
+    height:20px;
+    background:#00cc00;
+}
+
+#btnSair{
+    width:90px;
+    height:35px;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    background:#c70000;
+    color:white;
+    text-align:center;
+    line-height:35px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+    z-index:999;
+}
+
+#btnSair:hover{
+    background:#ff0000;
+}
+
+#jogadorFogo{
+    width:70px;
+    height:70px;
+    position:absolute;
+    left:100px;
+    top:500px;
+    background-image:url(../img/fogo.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+#jogadorAgua{
+    width:70px;
+    height:70px;
+    position:absolute;
+    left:220px;
+    top:500px;
+    background-image:url(../img/agua.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+#cristalFogo{
+    width:45px;
+    height:45px;
+    position:absolute;
+    left:700px;
+    top:200px;
+    background-image:url(../img/cristal_fogo.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    animation:pisca 1s infinite alternate;
+}
+
+#cristalAgua{
+    width:45px;
+    height:45px;
+    position:absolute;
+    left:800px;
+    top:350px;
+    background-image:url(../img/cristal_agua.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    animation:pisca 1s infinite alternate;
+}
+
+@keyframes pisca{
+    from{opacity:0.5;}
+    to{opacity:1;}
+}
+
+#porta{
+    width:100px;
+    height:120px;
+    position:absolute;
+    right:20px;
+    top:250px;
+    background-image:url(../img/porta.png);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    z-index:500;
+}
+
+#telaFinal{
+    width:950px;
+    height:630px;
+    cursor:pointer;
+}
+
+#telaFinal img{
+    width:950px;
+    height:630px;
+}
+
+#instrucao{
+    position:absolute;
+    top:55px;
+    left:50%;
+    transform:translateX(-50%);
+    width:700px;
+    padding:10px;
+    text-align:center;
+    font-size:16px;
+    font-weight:bold;
+    color:#ffffff;
+    background:rgba(0,0,0,0.7);
+    border:2px solid #ffffff;
+    border-radius:10px;
+    z-index:999;
+}
